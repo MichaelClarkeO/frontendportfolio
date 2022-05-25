@@ -1,7 +1,5 @@
 import './App.css';
 // IMPORT COMPONENTS
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 // IMPORT PAGES
 import Home from "./pages/Home";
@@ -13,13 +11,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/about" element={<About />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
