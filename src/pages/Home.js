@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Typical from 'react-typical'
 
 const Home = () => {
   return (
@@ -49,7 +48,7 @@ const Home = () => {
           </div>
         </div>
         <div className='home-profilePicture'>
-          <img src='#' alt='profilePic' />
+
         </div>
       </div>
     </div>

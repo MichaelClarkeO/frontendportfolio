@@ -1,10 +1,11 @@
-import './App.css';
+import './App.scss';
 // IMPORT COMPONENTS
 import { Route, Routes } from "react-router-dom";
 // IMPORT PAGES
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Layout from './components/Layout';
+
 
 function App() {
   
@@ -12,9 +13,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/about" element={<About />} />
+        <Route exact path="/" element={<Layout />} />
+ 
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
