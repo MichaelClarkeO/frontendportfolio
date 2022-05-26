@@ -1,24 +1,18 @@
 import './App.scss';
 // IMPORT COMPONENTS
 import { Route, Routes } from "react-router-dom";
-// IMPORT PAGES
-import About from "./pages/About";
-import Projects from "./pages/Projects";
 import Layout from './components/Layout';
-
+import Home from './components/Home';
 
 function App() {
-  
-
   return (
-    <div className="App">
+    <>
       <Routes>
-        <Route exact path="/" element={<Layout />} />
- 
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 
