@@ -9,6 +9,9 @@ faGitAlt,
 faHtml5, 
 faJsSquare, 
 } from '@fortawesome/free-brands-svg-icons';
+import './index.scss'
+import Loader from 'react-loaders'
+
 
 const About = () => {
 
@@ -21,6 +24,7 @@ const About = () => {
     }, [])
 
   return (
+      <>
     <div className='container about-page'>
         <div className='text-zone'>
             <h1>
@@ -58,6 +62,8 @@ const About = () => {
             </div>
         </div>
     </div>
+    <Loader type="pacman" />
+    </>
   )
 }
 
